@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Case</title>
+  </head>
+  <body>
+    <script>
+      function nilaiHuruf(nilai) {
+        if (nilai >= 85) {
+          return "A";
+        } else if (nilai >= 75) {
+          return "B";
+        } else if (nilai >= 60) {
+          return "C";
+        } else {
+          return "D";
+        }
+      }
+
+      function genapGanjil(nilai) {
+        return nilai % 2 === 0 ? "Genap" : "Ganjil";
+      }
+
+      let nilaiMahasiswa = 55;
+      let huruf = nilaiHuruf(nilaiMahasiswa);
+      let nilaGenapGanjil = genapGanjil(nilaiMahasiswa);
+
+      console.log(`Nilai Angka:${nilaiMahasiswa}`);
+      console.log(`Nilai Huruf:${huruf}`);
+      console.log(`Bilangan:${nilaGenapGanjil}`);
+    </script>
+  </body>
+</html>
